@@ -15,6 +15,9 @@ function App() {
       {people.map((person, personIndex) => {
         const {id, image, name, title, quote} = person
         // more stuff coming up
+        return <article key={id}>
+
+        </article>
       })}
     </div>
   </section>
