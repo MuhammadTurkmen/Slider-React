@@ -16,9 +16,9 @@ function App() {
         const {id, image, name, title, quote} = person
         // more stuff coming up
         return <article key={id}>
-          <img src={image} alt={name  } className='person-img'/>
+          <img src={image} alt={name} className='person-img'/>
           <h4>{name}</h4>
-          <p className='title'>{quote}</p>
+          <p className='title'>{title}</p>
         </article>
       })}
     </div>
