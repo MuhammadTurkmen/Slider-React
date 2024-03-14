@@ -23,6 +23,9 @@ function App() {
           <FaQuoteRight className='icon'/>
         </article>
       })}
+      <button className='prev'>
+        <FiChevronLeft />
+      </button>
     </div>
   </section>
 }
