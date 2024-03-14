@@ -25,7 +25,7 @@ function App() {
       })}
       <button className='prev'>
         <FiChevronLeft />
-      </button>
+      </button> 
       <button className='next'>
         <FiChevronRight />
       </button>
