@@ -12,7 +12,9 @@ function App() {
       </h2>
     </div>
     <div className="section-center">
-      {}
+      {people.map((person) => {
+        
+      })}
     </div>
   </section>
 }
