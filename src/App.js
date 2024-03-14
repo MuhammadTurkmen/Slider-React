@@ -11,6 +11,9 @@ function App() {
         <span>/</span>reviews
       </h2>
     </div>
+    <div className="section-center">
+      {}
+    </div>
   </section>
 }
 
