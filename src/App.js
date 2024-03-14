@@ -28,7 +28,7 @@ function App() {
       </button> 
       <button className='next'>
         <FiChevronRight />
-      </button>
+      </button> 
     </div>
   </section>
 }
