@@ -26,20 +26,26 @@ function App() {
         })
     }
 
-//   useEffect(() => {
+  useEffect(() => {
   
-//     const lastIndex = people.length -1
-//     if(index < 0) {
-//       setIndex(lastIndex)
-//     }
-//     if(index > lastIndex) {
-//       setIndex(0)
-//     }
-//   }, [index, people])
+    const lastIndex = people.length -1
+    if(index < 0) {
+      setIndex(lastIndex)
+    }
+    if(index > lastIndex) {
+      setIndex(0)
+    }
+  }, [index, people])
   
   useEffect(() => {
     setInterval(() => {
-      setIndex(index + 1)
+      setIndex((oldIndex) => {
+            let Index = oldIndex + 1
+            if(Index > people.length - 1) {
+                Index = 0
+            }
+            return Index
+        })
     }, 3000);
   }, index)
 
