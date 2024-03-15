@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
 
-  }, [index])
+  }, [index, people])
   
   return <section className='section'>
     <div className="title">
