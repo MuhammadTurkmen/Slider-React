@@ -6,6 +6,12 @@ function App() {
   const [people, setPeople] = useState(data)
   const [index, setIndex] = useState(0)
 
+    const nextSlide = () => {
+        setIndex((oldIndex) => {
+            let Index = oldIndex + 1
+        })
+    }
+
   useEffect(() => {
   
     const lastIndex = people.length -1
@@ -48,10 +54,10 @@ function App() {
           <FaQuoteRight className='icon'/>
         </article>
       })}
-      <button className='prev' onClick={() => setIndex(index - 1)}>  
+      <button className='prev' onClick={prevSlide}>  
         <FiChevronLeft />
       </button> 
-      <button className='next' onClick={() => setIndex(index + 1)}>  
+      <button className='next' onClick={nextSlide}>  
         <FiChevronRight />
       </button> 
     </div>
