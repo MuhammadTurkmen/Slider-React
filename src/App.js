@@ -5,6 +5,11 @@ import data from './data';
 function App() {
   const [people, setPeople] = useState(data)
   const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+
+  }, [index])
+  
   return <section className='section'>
     <div className="title">
       <h2>
