@@ -9,33 +9,33 @@ function App() {
     const nextSlide = () => {
         setIndex((oldIndex) => {
             let Index = oldIndex + 1
-            if(index > people.length - 1) {
-                index = 0
+            if(Index > people.length - 1) {
+                Index = 0
             }
-            return index
+            return Index
         })
     }
 
         const prevSlide = () => {
         setIndex((oldIndex) => {
             let Index = oldIndex - 1
-            if(index < 0) {
-                index = people.length - 1
+            if(Index < 0) {
+                Index = people.length - 1
             }
-            return index
+            return Index
         })
     }
 
-  useEffect(() => {
+//   useEffect(() => {
   
-    const lastIndex = people.length -1
-    if(index < 0) {
-      setIndex(lastIndex)
-    }
-    if(index > lastIndex) {
-      setIndex(0)
-    }
-  }, [index, people])
+//     const lastIndex = people.length -1
+//     if(index < 0) {
+//       setIndex(lastIndex)
+//     }
+//     if(index > lastIndex) {
+//       setIndex(0)
+//     }
+//   }, [index, people])
   
   useEffect(() => {
     setInterval(() => {
