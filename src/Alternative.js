@@ -12,6 +12,7 @@ function App() {
             if(index > people.length - 1) {
                 index = 0
             }
+            return index
         })
     }
 
