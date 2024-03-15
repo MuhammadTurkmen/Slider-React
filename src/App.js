@@ -18,8 +18,10 @@ function App() {
   }, [index, people])
   
   useEffect(() => {
-    
-  })
+    setInterval(() => {
+      
+    }, interval);
+  }, index)
 
   return <section className='section'>
     <div className="title">
