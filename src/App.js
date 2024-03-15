@@ -23,7 +23,7 @@ function App() {
           <FaQuoteRight className='icon'/>
         </article>
       })}
-      <button className='prev'> 
+      <button className='prev'>  
         <FiChevronLeft />
       </button> 
       <button className='next'>  
