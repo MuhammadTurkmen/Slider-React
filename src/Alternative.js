@@ -47,7 +47,7 @@ function App() {
             return Index
         })
     }, 3000);
-  }, index)
+  }, [index])
 
   return <section className='section'>
     <div className="title">
