@@ -19,8 +19,8 @@ function App() {
         const prevSlide = () => {
         setIndex((oldIndex) => {
             let Index = oldIndex - 1
-            if(index > people.length - 1) {
-                index = 0
+            if(index < 0) {
+                index = people.length - 1
             }
             return index
         })
