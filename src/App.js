@@ -19,8 +19,8 @@ function App() {
   
   useEffect(() => {
     setInterval(() => {
-      
-    }, interval);
+      setIndex(index + 1)
+    }, 3000);
   }, index)
 
   return <section className='section'>
