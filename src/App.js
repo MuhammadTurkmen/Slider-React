@@ -19,7 +19,7 @@ function App() {
         if(personIndex === index) {
           position = 'activeSlide'
         }
-        if() {
+        if(personIndex === index - 1) {
           position = 'lastSlide'
         }
         return <article className={position} key={id}>
